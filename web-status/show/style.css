@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400&display=swap');
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  border: 1px solid #888;
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: row; /* กำหนด flex-direction เป็นแนวนอน */
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 250%;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1{
+  font-size: clamp(20px, 1.5vw, 50px);
+}
+
+h3{
+  font-size: clamp(10px, 1.5vw, 23px);
+}
+.L-con h3{
+  font-size: clamp(10px, 1.5vw, 23px);
+}
+.L{
+  width: 50%;
+  height: 100%;
+  position: relative; 
+}
+.center{
+  width: 0.5%;
+  border : 1px solid white;
+  background-color:white;
+  
+}
+.R{
+  width: 100%;
+}
+.L-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  color:white;
+  width: 100%;
+  height: 80%;
+  margin-top: 10%;
+}
+.R-con{
+  margin-left:4%;
+  color:white;
+}
+.card1{
+
+ width: 50%;
+  
+}
+.card1 img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 13%;
+  border-top-right-radius: 13%;
+  z-index: 0;
+}
+
+body {
+  font-family: 'Mitr', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  justify-content: center;
+  align-items: center;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 8.5%;
+  height: 26%;
+  border-radius: 15%;
+  background-color: white;
+  position: absolute;
+
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 13%;
+  border-top-right-radius: 13%;
+  z-index: 0;
+}
+
+.card:nth-of-type(1) {
+  top: 5%;
+  left: 12.5%;
+}
+
+.card:nth-of-type(2) {
+  top: 38.5%;
+  left: 9.5%;
+}
+
+.card:nth-of-type(3) {
+  top: 68.5%;
+  left: 33.5%;
+}
+
+.card:nth-of-type(4) {
+  top: 68.5%;
+  left: 47.5%;
+}
+.card:nth-of-type(5) {
+  top: 68.5%;
+  left: 61.2%;
+}
+.card:nth-of-type(6) {
+  top: 38.5%;
+  left: 79%;
+}
+.card:nth-of-type(7) {
+  top: 4.7%;
+  left: 74.7%;
+}
+.card:nth-of-type(8) {
+  top: 0.9%;
+  left: 56.2%;
+  width: 6.8%;
+  height: 21%;
+}
+.card:nth-of-type(9) {
+  top: 0.9%;
+  left: 45.5%;
+  width: 6.8%;
+  height: 21%;
+}
+.card:nth-of-type(10) {
+  top: 0.9%;
+  left: 34.5%;
+  width: 6.8%;
+  height: 21%;
+}
+ p {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  margin: 0;
+  font-size: clamp(1px, 1vw, 20px);
+
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+

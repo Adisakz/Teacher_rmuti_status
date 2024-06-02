@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;600&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { window.location='sucess.html'}"></iframe>
+    <script>
+        var submitted = false;
+        document.addEventListener('DOMContentLoaded', function() {
+            // ดึงค่า Token จาก URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const tokenValue = urlParams.get('access_token');
+        
+            // ตรวจสอบว่ามีค่า Token ใน URL หรือไม่
+            if (tokenValue) {
+                const tokenInput = document.getElementById('Token');
+                tokenInput.value = tokenValue;
+                tokenInput.readOnly = true; // ทำให้ input เป็น "read-only"
+            }else {
+        window.location.href = 'index.html'; // ถ้าไม่มี Token ใน URL ให้ redirect ไปที่ index.html
+    }
+        });
+    </script>
+    <div class="topnav">
+        <h2>Register</h2>
+      </div>
+      <div class="wrapper">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfAMNx1kXtdyprtKcuJpKr5m_6d1mmeGmYehMa2AL2HNsKoMQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="myform">
+            <div class="input">
+                <p>รหัสนักศึกษา</p>
+                <input type="text" required id="n_student" name="entry.161340436">
+            </div>
+            <div class="input">
+                <p>ชื่อ</p>
+                <input type="text" required id="name" name="entry.871288331">
+            </div>
+            <div class="input">
+                <p>นามสกุล</p>
+                <input type="text" required id="lastname" name="entry.1377851903">
+            </div>
+            <div class="input">
+                <p>Email</p>
+                <input type="email" required id="email" name="entry.694680039">
+            </div>
+            <div class="input">
+                <p>Token</p>
+                <input type="text" required id="Token" name="entry.1736262928" style="color: rgb(196, 196, 196);">
+            </div>
+            <button type="submit">Register now</button>
+        </form>
+      </div>
+  
+</body>
+</html>

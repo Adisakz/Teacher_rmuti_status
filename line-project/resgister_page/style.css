@@ -1,0 +1,69 @@
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+font-family: 'Quicksand', sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #BC560C;
+    text-align: center;
+    color:aliceblue;
+  }
+  h2{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Quicksand', sans-serif;
+  }
+.wrapper{
+    width: 99%;
+    
+}
+button{
+    width: 100%;
+    margin: 3rem 0;
+    height: 3rem; 
+    border: 0;
+    background-color: #019321;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 550;
+    color: aliceblue;
+}
+
+
+form{
+    width: 80%;
+    padding: 9%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input{
+    display: grid;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 6%;
+}
+input{   
+    font-size: 1rem;
+    color: rgb(51, 51, 51);
+    background: none;
+    width: 100%;
+    border: 0;
+    margin-right: 4%;
+    height: 4vh;
+    font-family: 'Kanit', sans-serif,'Quicksand', sans-serif;
+
+}
+p{
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 2%;
+    font-size: 17px;
+    font-weight: bold;
+}
+h3{
+    color: #00861d;
+    font-size:2rem;
+}

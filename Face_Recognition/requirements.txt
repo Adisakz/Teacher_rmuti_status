@@ -1,0 +1,9 @@
+opencv-python 
+numpy 
+scikit-learn 
+keras-facenet
+torch 
+torchvision 
+torchaudio
+tensorflow
+pandas

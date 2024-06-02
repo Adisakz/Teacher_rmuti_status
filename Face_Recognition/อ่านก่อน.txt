@@ -1,0 +1,18 @@
+1.โปรเจคนี้ใช้กล้อง 2 ตัว
+2.ติดตั้ง library ตามไฟล์ requirements.txt
+3.รูปภาพบุคคลที่ต้องการเทรนจดจำให้บันทึกไว้  *( ภาพบุคคลแต่ละบุคคลควรมีอย่างน้อย 2 ภาพ)
+	image_people
+		- person 1
+			- 1.jpg
+			- 2.jpg
+			- 3.jpg
+		- person 2
+			- 1.jpg
+			- 2.jpg
+			- 3.jpg
+		- person 3
+			- 1.jpg
+			- 2.jpg
+			- 3.jpg
+4.การทำรันไฟล์ train_face.py
+5.รันไฟล์ main.py 

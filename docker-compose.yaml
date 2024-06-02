@@ -1,0 +1,36 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: ./api-status
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+
+  line-oa:
+    restart: unless-stopped
+    build: 
+      context: ./line-project
+      dockerfile: Dockerfile  
+    ports:
+      - "3030:3000"  
+
+  register-web:
+    restart: unless-stopped
+    build:
+      context: ./line-project/resgister_page
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
+    volumes:
+      - .:/usr/share/nginx/html
+
+  web-main:
+    restart: unless-stopped
+    build: web-status
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web-status:/usr/share/nginx/html
